@@ -1,0 +1,4 @@
+XLODBC
+1
+DRIVER=SQL Server;SERVER={server};UID={user};PWD={password};APP=2007 Microsoft Office system;WSID=COMPUTERNAME01;DATABASE={databasename}
+select p.codprocesso,sp.codsubprocesso,sp.codversaosubprocesso,pg.codgrupo,eo.desestrutura from processos p join processos_grupos pg on p.codprocesso = pg.codprocesso and pg.codgrupo = 15 join subprocessos sp on  p.codprocesso = sp.codprocesso join estrutura_org eo on eo.codestrutura = sp.codunnegocio where p.FlgInativo <>1 

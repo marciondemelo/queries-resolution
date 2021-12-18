@@ -1,0 +1,4 @@
+XLODBC
+1
+DRIVER=SQL Server;SERVER={instacename};UID={password};APP=2007 Microsoft Office system;WSID=COMPUTERNAME01;DATABASE={databasename}
+SELECT F.DesNome, FC.DesCargo  FROM dbo.Funcionarios F join dbo.Funcionarios_Cargos FC  ON FC.CodCargo = F.CodCargo
